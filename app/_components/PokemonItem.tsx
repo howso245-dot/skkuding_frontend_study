@@ -1,7 +1,7 @@
 'use client'
 
 import { Pokemon, pokemonData } from '../pokemonMock';
-import styles from './list.module.css';
+import styles from '../list.module.css';
 import Image from "next/image";
 import Link from "next/link";
 import { usePokemonId } from '../idStore';

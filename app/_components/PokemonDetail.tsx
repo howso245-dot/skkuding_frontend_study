@@ -22,31 +22,28 @@ const PokemonDetail = function(prop : {index : number})
     return(
         <div className='grid grid-cols-1 gap-4 p-3 overflow-y-scroll lg:grid-cols-2 justify-center no-scrollbar'>
             <Image src='/file.svg' id={styles.profile} alt="profile" width={450} height={450} />
-            <table className='border-2 rounded-4xl border-amber-300 text-white p-4'>
-                <thead></thead>
-                <tbody className='-m-80'>
+            <div className='justify-center border-2 rounded-4xl border-amber-300 text-white p-4'>
                     {Object.keys(Pokemon).map(keys => {
                     const key = keys as keyof typeof Pokemon;
                     
                     return(
                         (key === "types") ? 
-                        <tr key={key}>
-                            <td className={styles.key}>types</td>
-                            <td className={styles.value}>
+                        <div key={key} className={styles.tr}>
+                            <div className={styles.key}>types</div>
+                            <div className={styles.value}>
                                 <PokemonTypes {...Pokemon.types} />
-                            </td>
-                        </tr> : 
-                        <tr key={key}>
-                            <td className={styles.key}>{key}</td>
-                            <td className={styles.value}>
+                            </div>
+                        </div> : 
+                        <div key={key} className={styles.tr}>
+                            <div className={styles.key}>{key}</div>
+                            <div className={styles.value}>
                                 {Array.isArray(Pokemon[key]) ? Pokemon[key].join(", ") : Pokemon[key]}
-                            </td>
-                        </tr>
+                            </div>
+                        </div>
                     );
 
                     })}
-                </tbody>
-            </table> 
+            </div> 
         </div>
     );
 }
