@@ -1,0 +1,93 @@
+#typeWrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.type {
+  display: block;
+  padding: 4px 10px;
+  margin: 2px;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 타입별 색상 */
+#fire {
+  background-color: #f08030;
+}
+
+#water {
+  background-color: #6890f0;
+}
+
+#grass {
+  background-color: #78c850;
+}
+
+#electric {
+  background-color: #f8d030;
+  color: black;
+}
+
+#ice {
+  background-color: #98d8d8;
+  color: black;
+}
+
+#fighting {
+  background-color: #c03028;
+}
+
+#poison {
+  background-color: #a040a0;
+}
+
+#ground {
+  background-color: #e0c068;
+  color: black;
+}
+
+#flying {
+  background-color: #a890f0;
+}
+
+#psychic {
+  background-color: #f85888;
+}
+
+#bug {
+  background-color: #a8b820;
+}
+
+#rock {
+  background-color: #b8a038;
+}
+
+#ghost {
+  background-color: #705898;
+}
+
+#dragon {
+  background-color: #7038f8;
+}
+
+#dark {
+  background-color: #705848;
+}
+
+#steel {
+  background-color: #b8b8d0;
+  color: black;
+}
+
+#fairy {
+  background-color: #ee99ac;
+}
+
+#normal {
+  background-color: #a8a878;
+}

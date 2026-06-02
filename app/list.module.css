@@ -1,0 +1,51 @@
+.profile{
+    width: 5rem;
+    height: auto;
+    border: yellow solid 0.1rem;
+
+}
+#card_wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 3rem;
+   row-gap: 3rem;
+} 
+.Card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    color: #FFFFFF;
+    line-height: 0.5;
+    border: 2px,solid, yellow ;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 0.5rem;
+}
+.Card:hover{
+    border: solid, 2.5px, #FCEFB8;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 120px;
+}
+.IndexButton{
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: solid yellow 1px;
+    border-radius: 0.6rem;
+}
+.IndexButton:hover{
+    border: solid, 1.5px, #FCEFB8;
+}
+
+
+@media(max-width:54rem){
+    #card_wrapper{
+        grid-template-columns: 1fr;
+    }
+}

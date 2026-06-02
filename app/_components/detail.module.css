@@ -1,0 +1,63 @@
+body{
+    justify-content: center;
+}
+#profile{
+    aspect-ratio: 1 / 1;
+    border: 2px, solid, yellow;
+    border-radius: 100%;
+    justify-content: center;
+}
+
+.CardDetail{
+    display: grid;
+    grid-template-columns: 28rem 1fr;
+    gap: 2.5rem;
+    padding: 3rem;
+}
+#table{
+    border: 2px, solid, yellow;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+}
+.key{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px dashed yellow;
+}
+.value{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px dashed yellow;
+    text-align: right;
+}
+
+.IndexButton{
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: solid yellow 1px;
+    border-radius: 0.6rem;
+}
+.IndexButton:hover{
+    border: solid, 1.5px, #FCEFB8;
+}
+.ButtonWrapper{
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3rem;
+
+}
+
+@media(max-width:56rem){
+    .CardDetail{
+        grid-template-columns: 1fr;
+    }
+    #profile{
+        grid-column: 1 / 3;
+    }
+    #table{
+        grid-column: 1 / 3;
+    }
+}
