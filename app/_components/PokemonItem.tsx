@@ -1,11 +1,11 @@
 'use client'
 
-import { Pokemon, pokemonData } from './pokemonMock';
+import { Pokemon, pokemonData } from '../pokemonMock';
 import styles from './list.module.css';
 import Image from "next/image";
 import Link from "next/link";
-import { usePokemonId } from './idStore';
-import { listPokemon } from './page';
+import { usePokemonId } from '../idStore';
+import { listPokemon } from '../page';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -17,7 +17,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import PokemonDetail from './_components/PokemonDetail';
+import PokemonDetail from './PokemonDetail';
 
 const PokemonItem = function(Pokemon : listPokemon)
 {

@@ -1,6 +1,6 @@
 
 //import { pokemonData } from './pokemonMock';
-import PokemonItem from './PokemonItem';
+import PokemonItem from './_components/PokemonItem';
 
 export interface type{
     type: {name : string}
