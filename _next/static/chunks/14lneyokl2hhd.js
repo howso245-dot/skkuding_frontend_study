@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,88591,t=>{t.q("/skkuding_frontend_study/_next/static/media/file.0h90-6f9ty1qj.svg")}]);
