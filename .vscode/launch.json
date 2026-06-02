@@ -5,6 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080/skkuding_frontend_study",
+            "webRoot": "${workspaceFolder}"
+        },
+        
+    
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
