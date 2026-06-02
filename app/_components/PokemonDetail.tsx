@@ -6,6 +6,7 @@ import styles from './detail.module.css'
 import { pokemonData } from '../pokemonMock'
 import {usePokemonId} from '../idStore'
 import Image from 'next/image'
+import fileImage from "../../public/file.svg"
 import { Button } from '@/components/ui/button'
 
 
@@ -21,7 +22,7 @@ const PokemonDetail = function(prop : {index : number})
 
     return(
         <div className='grid grid-cols-1 gap-4 p-3 overflow-y-scroll lg:grid-cols-2 justify-center no-scrollbar'>
-            <Image src='/file.svg' id={styles.profile} alt="profile" width={450} height={450} />
+            <Image src={fileImage} id={styles.profile} alt="profile" width={450} height={450} />
             <div className='justify-center border-2 rounded-4xl border-amber-300 text-white p-4'>
                     {Object.keys(Pokemon).map(keys => {
                     const key = keys as keyof typeof Pokemon;

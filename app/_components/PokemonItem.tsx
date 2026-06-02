@@ -3,6 +3,7 @@
 import { Pokemon, pokemonData } from '../pokemonMock';
 import styles from '../list.module.css';
 import Image from "next/image";
+import fileImage from "../../public/file.svg";
 import Link from "next/link";
 import { usePokemonId } from '../idStore';
 import { listPokemon } from '../page';
@@ -29,7 +30,7 @@ const PokemonItem = function(Pokemon : listPokemon)
         <Dialog>
             <DialogTrigger asChild>
                 <div className={styles.Card} onClick={()=>{setPokemonId(Pokemon.id)}}>
-                    <Image src="/file.svg" alt = "ItemProfile" className={styles.profile} width={1000} height={1000} />
+                    <Image src={fileImage} alt = "ItemProfile" className={styles.profile} width={1000} height={1000} />
                     <div className='flex flex-col gap-4 min-w-30'>
                         <h2 className='text-md font-bold'>{Pokemon.name}</h2>
                         <p> types : {Pokemon.typesStr.join(", ")}</p>
